@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <header class="home">
+            <h1>Home Page</h1>
+          </header>
+          
+        <div class="options">
+            <h2> Options </h2>
+
+        </div>
+
+        <div class="output">
+                 <h2> Student Groups </h2>
+            
+               
+            <table class="groups">
+                <tr>     
+                    <th>Name</th>
+                    <th>Partner 1</th>
+                    <th>Partner 2 </th> 
+                </tr>
+                <tr>
+                    {% for header in headings %}
+                    <th>{{ header }}</th>
+                    {% endfor %}
+                </tr>
+                    {% for row in data %}
+                    </tr>
+                        {% for cell in row %}
+                            <td> {{ cell }} </td>
+                        {% endfor %}
+                    {% endfor %}
+                    </tr>
+                </tr>
+            </table>
+            
+        </div> 
+
+        <div class="input"> 
+            <body>
+                <h2>File Upload</h2>
+                <form method="POST" action="" enctype="multipart/form-data">
+                    <p><input type="file" class="form-control" name="upload_excel"></p>
+                    <p><input type="submit" value="Submit"></p>
+                </form>
+            </body>
+        </div>
+        
+        <div class="export"> 
+            <body>
+                <h2>File Export</h2>
+                <a href="{{ name }}" download> <button type="button" method="DOWNLOAD"> Download </button> </a>
+            </body>
+        </div>
+    </body>
+</html>

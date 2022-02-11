@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    margin: auto;
+    max-width: 750px;
+    text-align:center;
+}
+h1{
+    font-family: "Nunito Sans", serif; 
+    border: solid 1px black;
+    width: 175px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    color: blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    text-decoration: underline;
+  }
+
+.options{
+    font-family: "Nunito Sans", serif; 
+    border: solid 1px black;
+    width: 100px;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    float: left;
+}
+
+.input{
+    font-family: "Nunito Sans", serif;
+      width: 200px;
+      border: solid 1px black;
+      margin: 10px 10px 10px 10px;
+      padding: 20px;
+      text-align: center;
+      float: left;
+      overflow: hidden;
+      height: 140px;
+  }
+.p{
+    font-family: "Nunito Sans", sans-serif;
+    }
+.output{
+      font-family: "Nunito Sans", serif; 
+      border: solid 1px black;
+      width: 300px;
+      padding: 10px;
+      margin: 10px 10px 10px 10px;
+      text-align: center; 
+      float: left;
+  }
+.export{
+    font-family: "Nunito Sans", serif;
+      width: 200px;
+      border: solid 1px black;
+      margin: 10px 10px 10px 10px;
+      padding: 20px;
+      text-align: center;
+      float: left;
+      overflow: hidden;
+      height: 120px;
+  }
+      
+  th{
+      padding: 20px 20px 20px 20px;
+      display:table-cell; 
+      vertical-align:top;
+  }
+  
+  tr{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .groups{
+      margin: auto;
+  }
+  
+  .testOutput{
+      font-size: 120%;
+  }
+
+  button, input{  
+    font-family: "Nunito Sans", sans-serif;
+  }
+  form{
+      font-family: "Nunito Sans", sans-serif;
+  }
+
+  @media screen and (max-width: 450px) {
+    .input{
+        float: none;
+    }
+    .export{
+        float: none;
+    }
+    .output{
+        float: right;
+    }
+    body{
+        margin: auto; 
+    }
+  }
